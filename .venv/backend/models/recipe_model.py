@@ -1,0 +1,47 @@
+# --- Importy ---
+
+# Pydantic pro datové modely s validací a serializací (např. při práci s FastAPI)
+from pydantic import BaseModel, Field
+
+# Typování: List, Optional, atd. pro jasné definování typů dat ve třídách
+from typing import List, Optional
+
+# BSON ObjectId – specifický typ ID používaný v MongoDB (např. _id v dokumentech)
+from bson import ObjectId
+
+# BaseModel je základní třída pro datové modely, která:
+# 	•	Zajišťuje validaci dat
+# 	•	Automaticky řeší převod mezi Python typy a JSON (serializace)
+# 	•	Umožňuje použít typování (např. str, int, List[str], atd.)
+# 	•	Hodí se výborně pro FastAPI – používá Pydantic modely jako vstup
+
+# Helper to work with ObjectId in Pydantic
+class PyObjectId(ObjectId):
+    @classmethod
+    def __get_validators__(cls):
+        yield cls.validate
+
+    @classmethod
+    def validate(cls, v):
+        if not ObjectId.is_valid(v):
+            raise ValueError("Invalid ObjectId")
+        return ObjectId(v)
+
+class Ingredient(BaseModel):
+    name: str
+    amount: str
+
+class RecipeModel(BaseModel):
+    id: Optional[PyObjectId] = Field(alias="_id")
+    title: str
+    description: Optional[str]
+    ingredients: List[Ingredient]
+    steps: List[str]
+    tags: Optional[List[str]] = []
+    created_by: Optional[PyObjectId]
+    created_at: Optional[str]
+
+    class Config:
+        allow_population_by_field_name = True
+        arbitrary_types_allowed = True
+        json_encoders = {ObjectId: str}
