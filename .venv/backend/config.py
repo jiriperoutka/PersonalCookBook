@@ -14,3 +14,5 @@ try:
     print("Ping OK – MongoDB is connected.")
 except Exception as e:
     print("Connection error:", e)
+
+db = client["cookbook"]

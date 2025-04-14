@@ -32,16 +32,16 @@ class Ingredient(BaseModel):
     amount: str
 
 class RecipeModel(BaseModel):
-    id: Optional[PyObjectId] = Field(alias="_id")
+    id: Optional[PyObjectId] = Field(default=None, alias="_id")
     title: str
     description: Optional[str]
     ingredients: List[Ingredient]
     steps: List[str]
     tags: Optional[List[str]] = []
-    created_by: Optional[PyObjectId]
-    created_at: Optional[str]
+    created_by: Optional[PyObjectId] = None
+    created_at: Optional[str] = None
 
     class Config:
-        allow_population_by_field_name = True
+        validate_by_name = True
         arbitrary_types_allowed = True
         json_encoders = {ObjectId: str}
