@@ -1,6 +1,7 @@
 from fastapi import APIRouter
 from models.recipe_model import RecipeModel
 from services.recipe_service import RecipeService
+from services.ai_service import generate_ai_tip
 from bson import ObjectId
 
 router = APIRouter()
@@ -36,3 +37,11 @@ def update_recipe(id: str, updated_recipe: dict):
         raise HTTPException(status_code=404, detail="Recipe not found")
 
     return {"status": "updated"}
+
+@router.get("/recipes/{id}/ai-tip")
+def get_ai_tip(id: str):
+    recipe = recipe_service.get_recipe(id)
+    if not recipe:
+        raise HTTPException(status_code=404, detail="Recipe not found")
+
+    return {"tip": generate_ai_tip(recipe)}
