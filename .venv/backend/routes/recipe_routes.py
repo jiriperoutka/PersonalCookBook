@@ -1,6 +1,7 @@
 from fastapi import APIRouter
 from models.recipe_model import RecipeModel
 from services.recipe_service import RecipeService
+from bson import ObjectId
 
 router = APIRouter()
 recipe_service = RecipeService()
@@ -14,3 +15,24 @@ def create_recipe(recipe: RecipeModel):
 @router.get("/recipes")
 def get_recipes():
     return recipe_service.get_all_recipes()
+
+@router.delete("/recipe/{id}")
+def delete_recipe(id: str):
+    if not ObjectId.is_valid(id):
+        raise HTTPException(status_code=400, detail="Invalid recipe ID")
+
+    deleted = recipe_service_delete_recipe(id)
+    if not deleted:
+        raise HTTPException(status_code=404, detail="Recipe not found")
+    return {"status": "deleted"}
+
+@router.put("/recipe/{id}")
+def update_recipe(id: str, updated_recipe: dict):
+    if not ObjectId.is_valid(id):
+        raise HTTPException(status_code=400, detail="Invalid recipe ID")
+
+    updated = recipe_service.update_recipe(id, updated_recipe)
+    if not updated:
+        raise HTTPException(status_code=404, detail="Recipe not found")
+
+    return {"status": "updated"}
