@@ -4,7 +4,7 @@
 from pydantic import BaseModel, Field
 
 # Typování: List, Optional, atd. pro jasné definování typů dat ve třídách
-from typing import List, Optional
+from typing import List, Optional, Literal
 
 # BSON ObjectId – specifický typ ID používaný v MongoDB (např. _id v dokumentech)
 from bson import ObjectId
@@ -31,12 +31,17 @@ class Ingredient(BaseModel):
     name: str
     amount: str
 
+class Step(BaseModel):
+    text: str
+    type: Literal["regular", "important", "info"] = "regular" #může nabývat pouze těchto hodnot, default je Regular
+    order: int
+
 class RecipeModel(BaseModel):
     id: Optional[PyObjectId] = Field(default=None, alias="_id")
     title: str
     description: Optional[str]
     ingredients: List[Ingredient]
-    steps: List[str]
+    steps: List[Step]
     tags: Optional[List[str]] = []
     created_by: Optional[PyObjectId] = None
     created_at: Optional[str] = None
