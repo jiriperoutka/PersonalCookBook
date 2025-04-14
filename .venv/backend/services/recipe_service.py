@@ -10,6 +10,11 @@ class RecipeService:
         result = self.collection.insert_one(recipe_data)
         return str(result.inserted_id)
 
+    def get_recipe(self, recipe_id: str):
+        if not ObjectId.is_valid(recipe_id):
+            return None
+        return self.collection.find_one({"_id": ObjectId(recipe_id)})
+
     def get_all_recipes(self):
         recipes = list(self.collection.find())
         for recipe in recipes:
