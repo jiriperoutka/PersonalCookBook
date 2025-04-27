@@ -4,11 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c22f08fe-0e1f-493d-9b0b-cfd41eed4ab4" name="Changes" comment="&quot;Add Open AI support - Pro Tip!&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/CookBook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CookBook.iml" afterDir="false" />
+    <list default="true" id="c22f08fe-0e1f-493d-9b0b-cfd41eed4ab4" name="Changes" comment="&quot;Add Open AI support - Pro Tip! Update&quot;">
+      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_example.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/backend/models/recipe_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/backend/models/recipe_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/backend/routes/recipe_routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/backend/routes/recipe_routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/backend/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/backend/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/backend/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/backend/models/recipe_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/recipe_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/backend/requirements.txt " beforeDir="false" afterPath="$PROJECT_DIR$/backend/requirements.txt " afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/backend/routes/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/backend/routes/recipe_routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/recipe_routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/backend/services/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/backend/services/ai_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/services/ai_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/backend/services/recipe_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/services/recipe_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/tests/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/tests/.coverage" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/services/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/tests/test_example.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +62,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests in test_example.py.executor": "Run",
     "Python.__init__.executor": "Run",
     "Python.api_test.executor": "Run",
     "Python.config.executor": "Run",
@@ -62,8 +75,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/.venv/backend" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/.venv/backend" />
       <recent name="$PROJECT_DIR$/.venv" />
     </key>
   </component>
@@ -187,7 +200,23 @@
       <option name="project" value="LOCAL" />
       <updated>1744643884324</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="&quot;Add Open AI support - Pro Tip! Update&quot;">
+      <option name="closed" value="true" />
+      <created>1745775124123</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1745775124123</updated>
+    </task>
+    <task id="LOCAL-00015" summary="&quot;Add Open AI support - Pro Tip! Update&quot;">
+      <option name="closed" value="true" />
+      <created>1745775245960</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1745775245960</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -198,20 +227,26 @@
     <MESSAGE value="&quot;Added get recipes and post recipes endpoints&quot;" />
     <MESSAGE value="&quot;Added Udate &amp; Delete endpoint + some minor updates&quot;" />
     <MESSAGE value="&quot;Add Open AI support - Pro Tip!&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Add Open AI support - Pro Tip!&quot;" />
+    <MESSAGE value="&quot;Add Open AI support - Pro Tip! Update&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Add Open AI support - Pro Tip! Update&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/.venv/backend/main.py</url>
+          <url>file://$PROJECT_DIR$/backend/main.py</url>
           <line>8</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/.venv/backend/config.py</url>
+          <url>file://$PROJECT_DIR$/backend/config.py</url>
           <line>17</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_example.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
