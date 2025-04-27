@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c22f08fe-0e1f-493d-9b0b-cfd41eed4ab4" name="Changes" comment="&quot;Add Open AI support - Pro Tip!&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/CookBook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CookBook.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/backend/models/recipe_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/backend/models/recipe_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/backend/routes/recipe_routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/backend/routes/recipe_routes.py" afterDir="false" />
-    </list>
+    <list default="true" id="c22f08fe-0e1f-493d-9b0b-cfd41eed4ab4" name="Changes" comment="&quot;Add Open AI support - Pro Tip! Update&quot;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -187,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744643884324</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="&quot;Add Open AI support - Pro Tip! Update&quot;">
+      <option name="closed" value="true" />
+      <created>1745775124123</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1745775124123</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -198,7 +201,8 @@
     <MESSAGE value="&quot;Added get recipes and post recipes endpoints&quot;" />
     <MESSAGE value="&quot;Added Udate &amp; Delete endpoint + some minor updates&quot;" />
     <MESSAGE value="&quot;Add Open AI support - Pro Tip!&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Add Open AI support - Pro Tip!&quot;" />
+    <MESSAGE value="&quot;Add Open AI support - Pro Tip! Update&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Add Open AI support - Pro Tip! Update&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
