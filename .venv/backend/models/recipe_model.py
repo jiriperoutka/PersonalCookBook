@@ -45,6 +45,7 @@ class RecipeModel(BaseModel):
     tags: Optional[List[str]] = []
     created_by: Optional[PyObjectId] = None
     created_at: Optional[str] = None
+    image_data: Optional[str] = None  # base64 encoded image
 
     class Config:
         validate_by_name = True

@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c22f08fe-0e1f-493d-9b0b-cfd41eed4ab4" name="Changes" comment="&quot;BE git ignore&quot;" />
+    <list default="true" id="c22f08fe-0e1f-493d-9b0b-cfd41eed4ab4" name="Changes" comment="&quot;Add Open AI support - Pro Tip!&quot;">
+      <change beforePath="$PROJECT_DIR$/.idea/CookBook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CookBook.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/backend/models/recipe_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/backend/models/recipe_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/backend/routes/recipe_routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/backend/routes/recipe_routes.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,21 +25,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "jiriperoutka"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jiriperoutka&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/jiriperoutka/PersonalCookBook.git",
-    "accountId": "0c3a19e7-72b9-43f8-9724-1da9b7067a6f"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jiriperoutka/PersonalCookBook.git&quot;,
+    &quot;accountId&quot;: &quot;0c3a19e7-72b9-43f8-9724-1da9b7067a6f&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2vOKGYM0TqDXUkBTOxPwDyYl6y3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -45,15 +50,20 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.__init__.executor": "Run",
+    "Python.api_test.executor": "Run",
     "Python.config.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.recipe_routes.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/.venv/backend" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/.venv" />
     </key>
   </component>
@@ -137,14 +147,58 @@
       <option name="project" value="LOCAL" />
       <updated>1744219289348</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="&quot;BE git ignore&quot;">
+      <option name="closed" value="true" />
+      <created>1744563390785</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1744563390786</updated>
+    </task>
+    <task id="LOCAL-00010" summary="&quot;Connection to DB&quot;">
+      <option name="closed" value="true" />
+      <created>1744563407447</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1744563407447</updated>
+    </task>
+    <task id="LOCAL-00011" summary="&quot;Added get recipes and post recipes endpoints&quot;">
+      <option name="closed" value="true" />
+      <created>1744612313768</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1744612313768</updated>
+    </task>
+    <task id="LOCAL-00012" summary="&quot;Added Udate &amp; Delete endpoint + some minor updates&quot;">
+      <option name="closed" value="true" />
+      <created>1744636529529</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1744636529529</updated>
+    </task>
+    <task id="LOCAL-00013" summary="&quot;Add Open AI support - Pro Tip!&quot;">
+      <option name="closed" value="true" />
+      <created>1744643884323</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1744643884324</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="git commit -m &quot;first commit&quot;" />
     <MESSAGE value="&quot;BE preparation&quot;" />
     <MESSAGE value="&quot;BE git ignore&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;BE git ignore&quot;" />
+    <MESSAGE value="&quot;Connection to DB&quot;" />
+    <MESSAGE value="&quot;Added get recipes and post recipes endpoints&quot;" />
+    <MESSAGE value="&quot;Added Udate &amp; Delete endpoint + some minor updates&quot;" />
+    <MESSAGE value="&quot;Add Open AI support - Pro Tip!&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Add Open AI support - Pro Tip!&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -153,6 +207,11 @@
           <url>file://$PROJECT_DIR$/.venv/backend/main.py</url>
           <line>8</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/.venv/backend/config.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

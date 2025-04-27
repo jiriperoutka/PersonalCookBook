@@ -1,8 +1,9 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, File, UploadFile
 from models.recipe_model import RecipeModel
 from services.recipe_service import RecipeService
 from services.ai_service import generate_ai_tip
 from bson import ObjectId
+import base64
 
 router = APIRouter()
 recipe_service = RecipeService()
