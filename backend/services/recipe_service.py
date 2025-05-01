@@ -13,7 +13,10 @@ class RecipeService:
     def get_recipe(self, recipe_id: str):
         if not ObjectId.is_valid(recipe_id):
             return None
-        return self.collection.find_one({"_id": ObjectId(recipe_id)})
+        recipe = self.collection.find_one({"_id": ObjectId(recipe_id)})
+        if recipe:
+            recipe["_id"] = str(recipe["_id"])  # ✅ převod na string
+        return recipe
 
     def get_all_recipes(self):
         recipes = list(self.collection.find())
