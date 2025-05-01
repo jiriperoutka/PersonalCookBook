@@ -1,3 +1,6 @@
 # Env file
 .venv/
 backend/.env
+
+# IDE
+.idea/
